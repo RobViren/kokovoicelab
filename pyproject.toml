@@ -1,0 +1,11 @@
+[project]
+name = "kokovoicelab"
+version = "0.1.0"
+description = "An application for experimenting with Kokoro voice models."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "kokoro-onnx>=0.3.8",
+    "soundfile>=0.13.1",
+    "torch>=2.6.0",
+]

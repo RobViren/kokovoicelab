@@ -1,0 +1,374 @@
+{
+  "gradeScheme": {
+    "A": 95,
+    "A-": 90,
+    "B": 85,
+    "B-": 80,
+    "C+": 75,
+    "C": 70,
+    "C-": 65,
+    "D+": 60,
+    "D": 55,
+    "D-": 50,
+    "F+": 45,
+    "F": 40
+  },
+  "trainingDurationScheme": {
+    "HH": "50-100 hours",
+    "H": "1-10 hours",
+    "MM": "10-100 minutes",
+    "M": "1-10 minutes"
+  },
+  "voices": [
+    {
+      "name": "af_heart",
+      "gender": "F",
+      "language": "American English",
+      "quality": 95,
+      "training_duration": null
+    },
+    {
+      "name": "af_alloy",
+      "gender": "F",
+      "language": "American English",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "af_aoede",
+      "gender": "F",
+      "language": "American English",
+      "quality": 75,
+      "training_duration": "1-10 hours"
+    },
+    {
+      "name": "af_bella",
+      "gender": "F",
+      "language": "American English",
+      "quality": 90,
+      "training_duration": "50-100 hours"
+    },
+    {
+      "name": "af_jessica",
+      "gender": "F",
+      "language": "American English",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "af_kore",
+      "gender": "F",
+      "language": "American English",
+      "quality": 75,
+      "training_duration": "1-10 hours"
+    },
+    {
+      "name": "af_nicole",
+      "gender": "F",
+      "language": "American English",
+      "quality": 80,
+      "training_duration": "50-100 hours"
+    },
+    {
+      "name": "af_nova",
+      "gender": "F",
+      "language": "American English",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "af_river",
+      "gender": "F",
+      "language": "American English",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "af_sarah",
+      "gender": "F",
+      "language": "American English",
+      "quality": 75,
+      "training_duration": "1-10 hours"
+    },
+    {
+      "name": "af_sky",
+      "gender": "F",
+      "language": "American English",
+      "quality": 65,
+      "training_duration": "1-10 minutes"
+    },
+    {
+      "name": "am_adam",
+      "gender": "M",
+      "language": "American English", 
+      "quality": 45,
+      "training_duration": "1-10 hours"
+    },
+    {
+      "name": "am_echo",
+      "gender": "M",
+      "language": "American English",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "am_eric",
+      "gender": "M",
+      "language": "American English",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "am_fenrir",
+      "gender": "M",
+      "language": "American English",
+      "quality": 75,
+      "training_duration": "1-10 hours"
+    },
+    {
+      "name": "am_liam",
+      "gender": "M",
+      "language": "American English",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "am_michael",
+      "gender": "M",
+      "language": "American English",
+      "quality": 75,
+      "training_duration": "1-10 hours"
+    },
+    {
+      "name": "am_onyx",
+      "gender": "M",
+      "language": "American English",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "am_puck",
+      "gender": "M",
+      "language": "American English",
+      "quality": 75,
+      "training_duration": "1-10 hours"
+    },
+    {
+      "name": "am_santa",
+      "gender": "M",
+      "language": "American English",
+      "quality": 50,
+      "training_duration": "1-10 minutes"
+    },
+    {
+      "name": "bf_alice",
+      "gender": "F",
+      "language": "British English",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "bf_emma",
+      "gender": "F",
+      "language": "British English",
+      "quality": 80,
+      "training_duration": "50-100 hours"
+    },
+    {
+      "name": "bf_isabella",
+      "gender": "F",
+      "language": "British English",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "bf_lily",
+      "gender": "F",
+      "language": "British English",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "bm_daniel",
+      "gender": "M",
+      "language": "British English",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "bm_fable",
+      "gender": "M",
+      "language": "British English",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "bm_george",
+      "gender": "M",
+      "language": "British English",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "bm_lewis",
+      "gender": "M",
+      "language": "British English",
+      "quality": 60,
+      "training_duration": "1-10 hours"
+    },
+    {
+      "name": "jf_alpha",
+      "gender": "F",
+      "language": "Japanese",
+      "quality": 75,
+      "training_duration": "1-10 hours"
+    },
+    {
+      "name": "jf_gongitsune",
+      "gender": "F",
+      "language": "Japanese",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "jf_nezumi",
+      "gender": "F",
+      "language": "Japanese",
+      "quality": 65,
+      "training_duration": "1-10 minutes"
+    },
+    {
+      "name": "jf_tebukuro",
+      "gender": "F",
+      "language": "Japanese",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "jm_kumo",
+      "gender": "M",
+      "language": "Japanese",
+      "quality": 65,
+      "training_duration": "1-10 minutes"
+    },
+    {
+      "name": "zf_xiaobei",
+      "gender": "F",
+      "language": "Mandarin Chinese",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "zf_xiaoni",
+      "gender": "F",
+      "language": "Mandarin Chinese",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "zf_xiaoxiao",
+      "gender": "F",
+      "language": "Mandarin Chinese",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "zf_xiaoyi",
+      "gender": "F",
+      "language": "Mandarin Chinese",
+      "quality": 55,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "ef_dora",
+      "gender": "F",
+      "language": "Spanish",
+      "quality": 70,
+      "training_duration": null
+    },
+    {
+      "name": "em_alex",
+      "gender": "M",
+      "language": "Spanish",
+      "quality": 70,
+      "training_duration": null
+    },
+    {
+      "name": "em_santa",
+      "gender": "M",
+      "language": "Spanish",
+      "quality": 70,
+      "training_duration": null
+    },
+    {
+      "name": "ff_siwis",
+      "gender": "F",
+      "language": "French",
+      "quality": 80,
+      "training_duration": "1-10 hours"
+    },
+    {
+      "name": "hf_alpha",
+      "gender": "F",
+      "language": "Hindi",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "hf_beta",
+      "gender": "F",
+      "language": "Hindi",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "hm_omega",
+      "gender": "M",
+      "language": "Hindi",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "hm_psi",
+      "gender": "M",
+      "language": "Hindi",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "if_sara",
+      "gender": "F",
+      "language": "Italian",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "im_nicola",
+      "gender": "M",
+      "language": "Italian",
+      "quality": 70,
+      "training_duration": "10-100 minutes"
+    },
+    {
+      "name": "pf_dora",
+      "gender": "F",
+      "language": "Brazilian Portuguese",
+      "quality": 70,
+      "training_duration": null
+    },
+    {
+      "name": "pm_alex",
+      "gender": "M",
+      "language": "Brazilian Portuguese",
+      "quality": 70,
+      "training_duration": null
+    },
+    {
+      "name": "pm_santa",
+      "gender": "M",
+      "language": "Brazilian Portuguese",
+      "quality": 70,
+      "training_duration": null
+    }
+  ]
+}
