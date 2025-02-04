@@ -3,6 +3,11 @@
 An application for experimenting with Kokoro voice models, allowing voice interpolation and managing voices in a database for later use. The application uses sqlite queries to select two different groups of voices from the available kokoro voice dataset. It then uses the differences of those groups to create interpolation between **and** beyond them. The usage example shows grouping of quality American and British voices. When the code is run it produces audio from extreme American (-2) to extreme British (2) which goes beyond the accent trait of the available models.
 
 This setup allows for the synthetic generation of voices that are not present in the original dataset. You can then insert those voices into the database and mix them to make even more diverse and unique voices.
+## Samples
+
+Extreme Female: https://drive.google.com/file/d/1qapq7lN-yVkn6fhWO2tddPdG9whRAg2s/view?usp=drive_link
+Middle: https://drive.google.com/file/d/1a3-z4S-nk0NVTgG2R6vf2DaCG84hBuAV/view?usp=drive_link
+Extreme Male: https://drive.google.com/file/d/1Q_BJ9RU1hbnT6yAYk3eR3lsSjeVE1gvJ/view?usp=drive_link
 
 ## Installation
 I highly encourage the use of uv for dependency management.
@@ -39,6 +44,16 @@ uv run kokovoicelab.py \
   --text "This is an example of how we can explore accents and other things. Neat!" \
   --ranges="-2,-1,0,1,2" \
   --output-dir "samples"
+```
+Generate voices that are on the extremes of masculine and feminine:
+
+```bash
+uv run kokovoicelab.py \
+    --source-query "SELECT * FROM voices WHERE gender='F' and quality >= 70 AND language='American English'" \
+    --target-query "SELECT * FROM voices WHERE gender='M'" \
+    --text "It is possible to make new voices ranging from extreme male to extreme female to anything in between." \
+    --speed 1.0 \
+    --ranges="-3,0,3"
 ```
 
 ### Creating Custom Voices
