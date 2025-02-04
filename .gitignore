@@ -15,3 +15,5 @@ wheels/
 *.bin
 run.sh
 voices.db
+
+*.pt
