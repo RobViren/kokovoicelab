@@ -7,19 +7,18 @@ This setup allows for the synthetic generation of voices that are not present in
 ## Installation
 I highly encourage the use of uv for dependency management.
 
-1. Ensure Python 3.12+ is installed
-2. Install uv (https://github.com/astral-sh/uv):
+1. Install uv (https://github.com/astral-sh/uv):
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-3. Download required model files:
+2. Download required model files:
 
 ```bash
 uv run scripts/fetch_models.py
 ```
 
-4. Initialize the voice database:
+3. Initialize the voice database:
 
 ```bash
 uv run scripts/create_voice_db.py
@@ -43,6 +42,8 @@ uv run kokovoicelab.py \
 ```
 
 ### Creating Custom Voices
+
+The insert argument determines the range to use for the interpolation. Use the name, gender, and quality fields to give more meteadata to your voice in the database.
 
 Insert a new synthetic voice that's 70% between source and target:
 

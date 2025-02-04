@@ -1,17 +1,3 @@
-# /// script
-# requires-python = ">=3.12"
-# dependencies = [
-#     "numpy==2.0.2",
-#     "requests",
-#     "torch==2.5.1",
-# ]
-# ///
-# declaring requests is necessary for running
-"""
-Run this file via:
-uv run scripts/fetch_voices.py
-"""
-
 import io
 import numpy as np
 import requests
