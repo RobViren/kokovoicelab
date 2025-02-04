@@ -1,6 +1,8 @@
 # KokoVoiceLab
 
-An application for experimenting with Kokoro voice models, allowing voice interpolation and managing voices in a database for later use.
+An application for experimenting with Kokoro voice models, allowing voice interpolation and managing voices in a database for later use. The application uses sqlite queries to select two different groups of voices from the available kokoro voice dataset. It then uses the differences of those groups to create interpolation between **and** beyond them. The usage example shows grouping of quality American and British voices. When the code is run it produces audio from extreme American (-2) to extreme British (2) which goes beyond the accent trait of the available models.
+
+This setup allows for the synthetic generation of voices that are not present in the original dataset. You can then insert those voices into the database and mix them to make even more diverse and unique voices.
 
 ## Installation
 I highly encourage the use of uv for dependency management.
