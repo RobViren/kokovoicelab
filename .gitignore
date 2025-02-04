@@ -14,6 +14,7 @@ wheels/
 *.lock
 *.bin
 run.sh
+insert.sh
 voices.db
 
 *.pt

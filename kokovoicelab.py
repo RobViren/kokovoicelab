@@ -84,9 +84,11 @@ def main():
         if args.quality is None:
             parser.error("--quality is required when using --insert")
 
-    # Create output directory
-    output_dir = Path(args.output_dir)
-    output_dir.mkdir(exist_ok=True)
+    # Create output directory only if needed
+    output_dir = None
+    if args.insert is None:  # Only create output dir if generating samples
+        output_dir = Path(args.output_dir)
+        output_dir.mkdir(exist_ok=True)
 
     # Register the numpy array adapter
     sqlite3.register_adapter(np.ndarray, adapt_array)
@@ -119,27 +121,15 @@ def main():
             VALUES (?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
             ''', (
                 args.name,
-                args.gender,  # Now using provided gender
+                args.gender,
                 args.lang,
-                args.quality, # Now using provided quality
+                args.quality,
                 interpolated_style,
                 True, # Mark as synthetic
                 args.notes
             ))
             conn.commit()
             print(f"Inserted synthetic voice '{args.name}' into database")
-            
-            # Generate sample for the inserted voice
-            samples, sample_rate = kokoro.create(
-                args.text,
-                voice=interpolated_style,
-                speed=args.speed,
-                lang=args.lang
-            )
-            
-            output_file = output_dir / f"{args.name}.wav"
-            sf.write(output_file, samples, sample_rate)
-            print(f"Created sample file: {output_file}")
             
         else:
             # Generate samples for each interpolation factor
