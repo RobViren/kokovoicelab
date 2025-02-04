@@ -79,14 +79,41 @@ This will:
 
 You can adjust the speech speed using the `--speed` parameter (default: 1.0).
 
+### Exporting Voices
+
+You can export voices from the database for use in other applications. There are two ways to export:
+
+1. Export a single voice as a PyTorch tensor (.pt file):
+
+```bash
+uv run scripts/export_voice.py \
+  --voice-name "af_heart" \
+  --output-dir "exported_voices"
+```
+
+2. Export all voices to a single binary file:
+
+```bash
+uv run scripts/export_voice.py \
+  --export-all \
+  --output-dir "exported_voices"
+```
+
+This will:
+1. For single voice export: Create a .pt file containing the voice's style vector
+2. For all voices: Create a voices.bin file containing all voice style vectors
+3. Display metadata about the exported voice(s)
+
+The exported files can be used in other applications or for backup purposes. The .pt files are compatible with PyTorch, while the .bin file contains a compressed NPZ archive of all voice vectors.
+
 ### SQLite Schema
 
 The database includes the following fields for each voice:
 - `name`: Unique identifier
-- `gender`: M/F/X
+- `gender`: M/F/X, X indicates a custom voice which may not have gender
 - `language`: Voice language
-- `quality`: Rating from 0-100
-- `training_duration`: Amount of training data used
+- `quality`: Rating from 0-100 based on the huggingface readme
+- `training_duration`: Amount of training data used based on the huggingface readme
 - `style_vector`: Neural voice embedding
 - `is_synthetic`: Boolean flag for generated voices
 - `notes`: Optional description
