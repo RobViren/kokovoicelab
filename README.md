@@ -5,9 +5,11 @@ An application for experimenting with Kokoro voice models, allowing voice interp
 This setup allows for the synthetic generation of voices that are not present in the original dataset. You can then insert those voices into the database and mix them to make even more diverse and unique voices.
 ## Samples
 
-Extreme Female: https://drive.google.com/file/d/1qapq7lN-yVkn6fhWO2tddPdG9whRAg2s/view?usp=drive_link
-Middle: https://drive.google.com/file/d/1a3-z4S-nk0NVTgG2R6vf2DaCG84hBuAV/view?usp=drive_link
-Extreme Male: https://drive.google.com/file/d/1Q_BJ9RU1hbnT6yAYk3eR3lsSjeVE1gvJ/view?usp=drive_link
+[Extreme Female](https://drive.google.com/file/d/1qapq7lN-yVkn6fhWO2tddPdG9whRAg2s/view?usp=drive_link)
+
+[Middle](https://drive.google.com/file/d/1a3-z4S-nk0NVTgG2R6vf2DaCG84hBuAV/view?usp=drive_link)
+
+[Extreme Male](https://drive.google.com/file/d/1Q_BJ9RU1hbnT6yAYk3eR3lsSjeVE1gvJ/view?usp=drive_link)
 
 ## Installation
 I highly encourage the use of uv for dependency management.
